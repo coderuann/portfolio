@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+body {
+    height: 500px; /* Altere a altura conforme necessário */
+    background-image: url('/images/pexels-eberhardgross-691668.jpg'); /* Caminho da imagem de fundo */
+    background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    border-radius: 70px;
+    overflow-x: hidden;
+}
+
+.container{
+    padding: 2rem;
+    margin: 20px auto;
+    max-width: 900px;
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo com leve transparência */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    position: relative; /* Para garantir que o conteúdo fique acima do fundo */
+}
+
+h1{
+    text-align: center;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+h2{
+    margin: 0;
+    border: 2px solid rgb(255, 255, 255);
+    color: white;
+    padding: 3px;
+}
+
+p{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    padding: 3px;
+}
+
+h2{
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    border-radius: 8px;
+}
+
+.eu_rapazes{
+    width: 300px;
+    margin: auto;
+    display: block;
+    border-radius: 50px;
+}
+
+.eu_rapazes, .cbjr {
+    width: 100%; /* Mudei para 100% para se ajustar ao contêiner */
+    max-width: 300px; /* Limite a largura máxima */
+    margin: auto;
+    display: block;
+    border-radius: 50px; /* Pode ser ajustado conforme necessário */
+    transition: width 0.3s, box-shadow 0.3s, border-radius 0.3s; /* Transições suaves */
+}
+
+.eu_rapazes:hover, .cbjr:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+    border-radius: 10px; /* Ajustado para um efeito suave */
+    width: 90%; /* Ajuste a largura em porcentagem */
+}
+.menu {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    text-align: center; /* Centraliza o texto */
+    margin: 20px 0; /* Margem acima e abaixo do menu */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu li {
+    display: inline-block; /* Exibe os itens do menu lado a lado */
+    margin: 0 15px; /* Margem entre os itens */
+}
+
+.menu a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: white; /* Cor do texto do link */
+    padding: 10px 15px; /* Espaçamento interno */
+    border: 2px solid transparent; /* Borda transparente */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s, border-color 0.3s; /* Transição suave */
+}
+
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Cor de fundo ao passar o mouse */
+    border-color: rgb(255, 255, 255); /* Cor da borda ao passar o mouse */
+}
+/* Estilos para hover em telas menores */
+@media (max-width: 768px) {
+    .perfil:hover {
+        width: 80%; /* Reduz a largura do hover em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .perfil:hover {
+        width: 70%; /* Reduz ainda mais a largura do hover em telas muito pequenas */
+    }
+}
