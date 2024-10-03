@@ -2,7 +2,7 @@
 
 body {
     height: 500px; /* Altere a altura conforme necessário */
-    background-image: url(images/fundo.jpg); /* Caminho da imagem de fundo */
+    background-image: url('fundo.jpg'); /* Caminho da imagem de fundo */
     background-attachment: fixed; /* Faz a imagem de fundo ficar fixa */
     background-position: center; /* Centraliza a imagem */
     background-repeat: no-repeat; /* Não repete a imagem */
